@@ -27,7 +27,7 @@ Route::get('/', function () {
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::get('/registerr', [AuthController::class, 'createuser']);
-Route::middleware('statuslogin')->group(function (){
+ Route::middleware('statuslogin')->group(function (){
 
     Route::get('reports', [ReportController::class, 'index'])->name('reports');
     
@@ -44,7 +44,7 @@ Route::middleware('statuslogin')->group(function (){
     Route::get('/home',[UserController::class,'home']);
     Route::get('/index',[UserController::class,'index']);
     
-    
+    // Route::resource('users', UserController::class);    
     Route::middleware('auth')->group(function () {
         Route::resource('topups', TopUpController::class);
     });
@@ -56,7 +56,7 @@ Route::middleware('statuslogin')->group(function (){
 });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction - Futuristic</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Top-Up - Futuristic</title>
     <link rel="stylesheet" href="{{ asset('asset/bootstrap-5.1.3-dist/css/bootstrap.min.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -13,53 +14,67 @@
             background: #0d0d0d;
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        form {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            width: 400px;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         label {
             color: #ffd700;
-            text-shadow: 0 0 10px #ffd700;
-        }
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+         }
 
-        input[type="text"],
-        input[type="number"],
-        select {
+        input[type="text"], input[type="number"] {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
             border: 2px solid #ffd700;
             border-radius: 50px;
             background: #333;
             color: #fff;
+            margin-bottom: 20px;
             transition: border 0.3s, box-shadow 0.3s;
         }
 
-        input:focus,
-        select:focus {
+        input[type="text"]:focus, input[type="number"]:focus {
             border-color: #ffc107;
             box-shadow: 0 0 10px #ffd700;
         }
-
-        button {
+        select{
             width: 100%;
             padding: 10px;
-            border: none;
+            border: 2px solid #ffd700;
             border-radius: 50px;
+            background: #333;
+            color: #fff;
+            margin-bottom: 20px;
+            transition: border 0.3s, box-shadow 0.3s;   
+        }  
+        button {
             background: #ffd700;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
             color: #000;
             cursor: pointer;
+            font-size: 1.2em;
             transition: background 0.3s, transform 0.3s;
+            display: block;
+            margin: 0 auto;
         }
 
         button:hover {
@@ -69,31 +84,34 @@
     </style>
 </head>
 <body>
-    <form action="{{ route('transaction.store') }}" method="POST">
-        @csrf
-        <h1 class="text-center">Complete Your Transaction</h1>
-        <div>
-            <label for="id_game">Game ID</label>
-            <input type="text" name="id_game" id="id_game" required>
-        </div>
-        <div>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" required>
-        </div>
-        <div>
-            <label for="amount">Amount</label>
-            <input type="number" name="amount" id="amount" required>
-        </div>
-       
-        <div>
-            <label for="payment_method">Payment Method</label>
-            <select name="payment_method" id="payment_method" required>
-                <option value="credit_card">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bank_transfer">Bank Transfer</option>
-            </select>
-        </div>
-        <button type="submit">Complete Transaction</button>
-    </form>
+    <div class="container">
+        <h1>Create New Top-Up</h1>
+        <form action="{{ route('transaction.store') }}" method="POST">
+            @csrf
+            <div>
+                <label for="user_name">User Name</label>
+                <input type="text" name="user_name" required>
+            </div>
+            <div>
+                <label for="game_name">Game Name</label>
+                <input type="text" name="game_name" required>
+            </div>
+            <div>
+                <label for="amount">Amount</label>
+                <input type="number" name="amount" required>
+            </div>
+            <div>
+                <label for="metode">Meode Pembayaran</label>
+                <select name="metode" id="metode">
+                    <option value="dana">dana</option>
+                    <option value="gopay">gopay</option>
+                    <option value="wallet">wallet</option>
+                    <option value="alfamart">alfamart</option>
+                    <option value="indomart">indomart</option>
+                </select>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
 </body>
 </html>

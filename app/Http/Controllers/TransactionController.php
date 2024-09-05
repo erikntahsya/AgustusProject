@@ -2,22 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TopUp;
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
 {
-    public function create(Request $request)
+    public function create()
     {
-        $game = $request->input('game');
-        $price = $request->input('price');
-
-        return view('transaction.create', compact('game', 'price'));
+        return view('topups.create');
     }
 
+    
     public function store(Request $request)
     {
-    
+        
+        $request->validate([
+            'user_name' => 'required',
+            'game_name' => 'required',
+            'amount' => 'required|integer',
+            'metode' => 'required'
+        ]);
 
-        return redirect()->route('home')->with('success', 'Transaction completed successfully!');   
+                TopUp::create($request->all());
+
+      
+                return redirect('/home')->with('success', 'Transaction completed successfully!');   
     }
 }

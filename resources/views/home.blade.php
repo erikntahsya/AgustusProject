@@ -283,8 +283,8 @@
             <div class="container">
                 <h2>Top-Up Packages</h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>mobile legends</p>
                             <img src="storage/image/OIP.jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -294,8 +294,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>mobile legends</p>
                             <img src="storage/image/OIP.jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -304,8 +304,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>mobile legends</p>
                             <img src="storage/image/OIP.jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>
@@ -314,8 +314,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>free fire</p>
                             <img src="storage/image/OIP (2).jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -325,8 +325,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>free fire</p>
                             <img src="storage/image/OIP (2).jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -335,8 +335,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>free fire</p>
                             <img src="storage/image/OIP (2).jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>
@@ -345,8 +345,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                     <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>PUBG</p>
                             <img src="storage/image/OIP (1).jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -356,8 +356,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>PUBG</p>
                             <img src="storage/image/OIP (1).jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -366,8 +366,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>PUBG</p>
                             <img src="storage/image/OIP (1).jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>
@@ -376,8 +376,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                       <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>AOV</p>
                             <img src="storage/image/OIP (3).jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -387,8 +387,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>AOV</p>
                             <img src="storage/image/OIP (3).jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -397,8 +397,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>AOV</p>
                             <img src="storage/image/OIP (3).jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>
@@ -407,8 +407,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                       <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>HOK</p>
                             <img src="storage/image/OIP (4).jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -418,8 +418,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>HOK</p>
                             <img src="storage/image/OIP (4).jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -428,8 +428,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>HOK</p>
                             <img src="storage/image/OIP (4).jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>
@@ -438,8 +438,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                       <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>Genshin</p>
                             <img src="storage/image/download.jpeg" alt="Diamond Package">
                             <h3>Diamond Package</h3>
@@ -449,8 +449,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>Genshin</p>
                             <img src="storage/image/download.jpeg" alt="Gold Package">
                             <h3>Gold Package</h3>
@@ -459,8 +459,8 @@
                             <a href="{{ route('transaction.create') }}" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-item">
+                    <div class="col-md-4 mb-4">
+                        <div class="product-item p-3 border">
                             <p>Genshin</p>
                             <img src="storage/image/download.jpeg" alt="Platinum Package">
                             <h3>Platinum Package</h3>

@@ -133,8 +133,8 @@
 
         <div style="text-align: center;">
             <a href="{{ route('reports') }}" class="btn btn-primary">Go to Reports</a>
+            {{-- <a href="{{ route('users') }}" class="btn btn-primary">Create New User</a> --}}
             <a href="{{ route('dashboard') }}" class="btn btn-primary">Go to Dashboard</a>
-            <a href="{{ route('topups.create') }}" class="btn btn-primary">Create New Top-Up</a>
             <form action="{{ route('logout') }}" method="POST" style="display:inline;">
                 @csrf
                 <button type="submit" class="logout">Logout</button>
@@ -152,18 +152,18 @@
                     <th>User Name</th>
                     <th>Game Name</th>
                     <th>Amount</th>
-                    <th>Status</th>
+                    <th>Metode</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($topUps as $topUp)
+                @foreach ($topUps as $key => $topUp)
                 <tr>
-                    <td>{{ $topUp->id }}</td>
+                    <td>{{ $key+1 }}</td>
                     <td>{{ $topUp->user_name }}</td>
                     <td>{{ $topUp->game_name }}</td>
                     <td>{{ $topUp->amount }}</td>
-                    <td>{{ $topUp->status }}</td>
+                    <td>{{ $topUp->metode }}</td>
                     <td>
                         <a href="{{ route('topups.show', $topUp->id) }}">Show</a>
                         <a href="{{ route('topups.edit', $topUp->id) }}">Edit</a>

@@ -12,6 +12,6 @@ class TopUp extends Model
         'user_name',
         'game_name',
         'amount',
-        'status',
+        'metode',
     ];  
 }

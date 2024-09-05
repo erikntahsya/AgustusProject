@@ -122,7 +122,6 @@
             <label>Level</label>
             <select name="level" required>
                 <option value="pelanggan">pelanggan</option>
-                <option value="admin">Admin</option>
             </select>
         </div>
         <div>

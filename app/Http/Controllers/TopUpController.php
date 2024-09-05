@@ -35,7 +35,7 @@ class TopUpController extends Controller
             'user_name' => 'required',
             'game_name' => 'required',
             'amount' => 'required|integer',
-            'status' => 'required'
+            'metode' => 'required'
         ]);
 
                 TopUp::create($request->all());
@@ -67,7 +67,6 @@ class TopUpController extends Controller
             'amount' => 'required|integer',
             'status' => 'required'
         ]);
-
         $topup->update($request->all());
 
         return redirect()->route('topups.index')->with('success', 'Top-Up updated successfully.');

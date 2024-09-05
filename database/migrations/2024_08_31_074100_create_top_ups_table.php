@@ -16,7 +16,7 @@ return new class extends Migration
         $table->string('user_name');
         $table->string('game_name');
         $table->integer('amount');
-        $table->string('status')->default('pending');
+        $table->string('metode');
         $table->timestamps();
     });
 }

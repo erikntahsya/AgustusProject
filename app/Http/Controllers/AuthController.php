@@ -46,7 +46,7 @@ class AuthController extends Controller
             'password' => bcrypt($request->password),
             'alamat' => $request->alamat,
             'no_tlp' => $request->no_tlp,
-            'level' => $request->level
+            'level' => 'pelanggan'
         ]);
         return redirect('login');
     }
